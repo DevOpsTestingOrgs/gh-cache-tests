@@ -32,3 +32,17 @@ jobs:
           with:
             name: file
         - run: cat file.txt
+  deploy-to-production:
+    needs: [job_1,job_2]
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: my-app
+      - name: Deploy to Prod
+        run: |
+          echo "Deployign to production environment"
+    

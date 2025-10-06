@@ -1,0 +1,1 @@
+[![Share data between jobs](https://github.com/DevOpsTestingOrgs/gh-cache-tests/actions/workflows/artificat-pass-ex.yml/badge.svg)](https://github.com/DevOpsTestingOrgs/gh-cache-tests/actions/workflows/artificat-pass-ex.yml)
